@@ -71,8 +71,8 @@ void main() {
     for (int col = 0; col < wc; col++) {
         int row = nArr[col];
 
-        while(row >= 0) {
-            mArr[(max - 1) - row--][col] = 1;
+        while(row > 0) {
+            mArr[max - row--][col] = 1;
         }
 
     }
