@@ -7,7 +7,7 @@
 #define OUT 0
 #define MIN_WORD_LENGTH 0
 
-void main() {
+int main() {
     int ch; int state = OUT;
     int arr[MAX_LENGTH] = {0};
     int cc = 0, wc = 0; //character count, word count
@@ -81,7 +81,7 @@ void main() {
         printf("\n");
 
         for (int col = 0; col < wc; col++) {
-            printf(" %3d ", mArr[row][col]);
+            printf("%c\t", mArr[row][col] == 1? '*' : ' ');
         }
 
     }
@@ -90,7 +90,7 @@ void main() {
 
     for (int i = 0; i < cc; i++) {
 
-        if (ch == ' ' || ch == '\n' || ch == '\t') {
+        if (arr[i] == ' ' || arr[i] == '\n' || arr[i] == '\t') {
             printf("\t");
         } else {
             printf("%c", arr[i]);
@@ -98,5 +98,7 @@ void main() {
     }
 
     printf("\n");
+
+    return 0;
 
 }

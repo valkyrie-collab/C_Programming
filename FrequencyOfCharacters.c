@@ -5,7 +5,7 @@
 #define OUT 0
 #define MAX_ARR_LENGTH 96
 
-void main() {
+int main() {
     int ch;
     int state = OUT;
     int arr[MAX_ARR_LENGTH] = {0};
@@ -71,15 +71,25 @@ void main() {
 
     }
 
+    printf("\n");
+
     for (int r = 0; r < row; r++) {
 
         printf("\n");
         for (int c = 0; c < col; c++) {
-            printf(" %d ", mArr[r][c]);
+            printf(" %c ", mArr[r][c] == 1? '*' : ' ');
         }
 
     }
 
     printf("\n");
+
+    for (int i = 0; i < col; i++) {
+        printf(" %c ", alphaArr[i]);
+    }
+
+    printf("\n");
+
+    return 0;
 
 }
