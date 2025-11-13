@@ -63,4 +63,5 @@ int main() {
     printf("The main String: %s\n with size: %d\n", char_arr, len);
     printf("The clean String is: %s\n", clean_char_arr);
 
+    return 0;
 }
