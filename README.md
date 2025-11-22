@@ -78,3 +78,6 @@ Q. what is segmentation fault(Core Dumped)
 
 Q. What will happen is we do not end the Character array with '\0' while printing with %s in C
 # Ans: In C, strings are arrays of characters terminated by a null character '\0'. This null marks the end of the string for printing or other string operations. If the null terminator is missing or misplaced, functions like printf("%s") continue reading memory after the intended string until they randomly hit a '\0'. This causes garbage, or unexpected characters, to print after the string.
+
+# When using math library which is sperated from the C stander library must use -lm when creating executable file <filename.c -o filename -lm>
+
