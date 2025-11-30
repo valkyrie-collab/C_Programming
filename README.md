@@ -81,3 +81,6 @@ Q. What will happen is we do not end the Character array with '\0' while printin
 
 # When using math library which is sperated from the C stander library must use -lm when creating executable file <filename.c -o filename -lm>
 
+# To get desire number of bits one must create mask of number of bits required "mask = ~(~0 << bits);"
+
+# To find move bits for the give number is "(num >> (position + 1 - bits)) & mask" to get the desire bits
