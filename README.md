@@ -87,3 +87,5 @@ Q. What will happen is we do not end the Character array with '\0' while printin
 # To get desire number of bits one must create mask of number of bits required "mask = ~(~0 << bits);"
 
 # To find move bits for the give number is "(num >> (position + 1 - bits)) & mask" to get the desire bits
+
+# use of "#ifndef <NAME> then #define <NAME> /*content*/ #endif" A header file contains this is to prevent the content in the header file to again re initialize which can cause error. To avoid the same header file to re-initialize it is given; ifndef mean <Is it not define yet?> there are other but 
