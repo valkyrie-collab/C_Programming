@@ -1,0 +1,1 @@
+/*one array will contain smallest size element and other will contain greatest size element*/

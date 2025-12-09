@@ -23,6 +23,9 @@ Ans. Explanation:
 
 # In C programming there is not "INDEX OUT OF BOUND ERROR" it should be done personally/ buy the programmer
 
+Q. How getchar() works?
+# When we enter any array of characters the first getchar() function reads the first char then the other getchar() 'Even if they in the loop' reads the other character subsequently until it reaches eof or other stop statement. What we can deduct is that the stream of characters will be stored in the memory for temporary and will continue to print until the EOF or other break statement is given
+
 Q. Why one should use int main() {return 0;} and not void main () {return ;}?
 # Ans: This is because the C standard (and also the C++ standard) requires the return type of the main function to be int. This allows your program to return a value to the operating system, where returning 0 typically means successful execution and any non-zero value indicates an error.​
 
