@@ -89,3 +89,11 @@ Q. What will happen is we do not end the Character array with '\0' while printin
 # To find move bits for the give number is "(num >> (position + 1 - bits)) & mask" to get the desire bits
 
 # use of "#ifndef <NAME> then #define <NAME> /*content*/ #endif" A header file contains this is to prevent the content in the header file to again re initialize which can cause error. To avoid the same header file to re-initialize it is given; ifndef mean <Is it not define yet?> there are other but 
+
+Q. static keyword
+# it means when initialize the variable created in the data segment and stores there and do not reinitialize again helping the pariticular variable to remember the previous initialization;
+
+Q. what %s in printf actually does?
+# it reads a stream of char from starting address until '\0' is reached.
+
+# For pointer *count is the variable which will give value to the pointed address and count will give the address only any changes in the *count will change the value of the address of the variable which it points to suppose x = 10; int *count = x; *count = 20; then x value will change to 20;
